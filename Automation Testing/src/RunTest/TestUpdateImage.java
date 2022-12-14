@@ -52,11 +52,13 @@ public class TestUpdateImage extends InitProfile {
 
 		if (CheckFile(filename)) {
 			this.driver.findElement(By.xpath(pathUploadFile)).click();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			if (state.equals("Cancel")) {
 				this.driver.findElement(By.xpath(pathCancel)).click();
 				assertEquals(this.driver.findElement(By.linkText("Sửa hồ sơ cá nhân")).getText(), expected);
+				
 				this.driver.findElement(By.linkText("Sửa hồ sơ cá nhân")).click();
+				assertEquals(this.driver.getTitle(), "BKEL: Sửa hồ sơ cá nhân");
 			}
 		} else {
 			this.driver.findElement(By.xpath(pathUploadFile)).click();
@@ -65,6 +67,6 @@ public class TestUpdateImage extends InitProfile {
 			//reload page
 			this.driver.navigate().refresh();
 		}
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 	}
 }

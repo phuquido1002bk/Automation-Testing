@@ -8,87 +8,132 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Automation Testing</th></tr>
-<tr><td><a href="#t0">Update Password</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">18,600</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Update image</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">100,439</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">16</th><th class="num">0</th><th class="num">0</th><th class="num attn">5</th><th class="num">119,039</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">19,467</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Automation Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Update Password &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">RunTest.TestUpdateAccount</td><td><a href="#m0">ChangePassword</a></td><td rowspan="2">1671017835868</td><td rowspan="2">587</td></tr><tr class="failedeven"><td><a href="#m1">ChangePassword</a></td></tr><tr class="failedeven"><td><a href="#m2">ResetPassword</a></td><td rowspan="1">1671017841556</td><td rowspan="1">547</td></tr><tr><th colspan="4">Update Password &#8212; passed</th></tr><tr class="passedeven"><td rowspan="11">RunTest.TestUpdateAccount</td><td><a href="#m3">ChangePassword</a></td><td rowspan="7">1671017839962</td><td rowspan="7">425</td></tr><tr class="passedeven"><td><a href="#m4">ChangePassword</a></td></tr><tr class="passedeven"><td><a href="#m5">ChangePassword</a></td></tr><tr class="passedeven"><td><a href="#m6">ChangePassword</a></td></tr><tr class="passedeven"><td><a href="#m7">ChangePassword</a></td></tr><tr class="passedeven"><td><a href="#m8">ChangePassword</a></td></tr><tr class="passedeven"><td><a href="#m9">ChangePassword</a></td></tr><tr class="passedeven"><td><a href="#m10">ResetPassword</a></td><td rowspan="4">1671017840489</td><td rowspan="4">470</td></tr><tr class="passedeven"><td><a href="#m11">ResetPassword</a></td></tr><tr class="passedeven"><td><a href="#m12">ResetPassword</a></td></tr><tr class="passedeven"><td><a href="#m13">ResetPassword</a></td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Update image &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">RunTest.TestUpdateImage</td><td><a href="#m14">UpdateImage</a></td><td rowspan="2">1671017883814</td><td rowspan="2">30197</td></tr><tr class="failedeven"><td><a href="#m15">UpdateImage</a></td></tr><tr><th colspan="4">Update image &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">RunTest.TestUpdateImage</td><td><a href="#m16">UpdateImage</a></td><td rowspan="5">1671017875789</td><td rowspan="5">3719</td></tr><tr class="passedeven"><td><a href="#m17">UpdateImage</a></td></tr><tr class="passedeven"><td><a href="#m18">UpdateImage</a></td></tr><tr class="passedeven"><td><a href="#m19">UpdateImage</a></td></tr><tr class="passedeven"><td><a href="#m20">UpdateImage</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">RunTest.TestUpdateAccount</td><td><a href="#m0">ChangePassword</a></td><td rowspan="2">1671032816137</td><td rowspan="2">591</td></tr><tr class="failedeven"><td><a href="#m1">ChangePassword</a></td></tr><tr class="failedeven"><td><a href="#m2">ResetPassword</a></td><td rowspan="1">1671032822319</td><td rowspan="1">567</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="11">RunTest.TestUpdateAccount</td><td><a href="#m3">ChangePassword</a></td><td rowspan="7">1671032818850</td><td rowspan="7">565</td></tr><tr class="passedeven"><td><a href="#m4">ChangePassword</a></td></tr><tr class="passedeven"><td><a href="#m5">ChangePassword</a></td></tr><tr class="passedeven"><td><a href="#m6">ChangePassword</a></td></tr><tr class="passedeven"><td><a href="#m7">ChangePassword</a></td></tr><tr class="passedeven"><td><a href="#m8">ChangePassword</a></td></tr><tr class="passedeven"><td><a href="#m9">ChangePassword</a></td></tr><tr class="passedeven"><td><a href="#m10">ResetPassword</a></td><td rowspan="4">1671032821694</td><td rowspan="4">586</td></tr><tr class="passedeven"><td><a href="#m11">ResetPassword</a></td></tr><tr class="passedeven"><td><a href="#m12">ResetPassword</a></td></tr><tr class="passedeven"><td><a href="#m13">ResetPassword</a></td></tr></tbody>
 </table>
-<h2>Update Password</h2><h3 id="m0">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, , , , Your login is required]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Your login is required] but found [Your old password is required]
+<h2>Default test</h2><h3 id="m0">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, , , , Your login is required]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Your login is required] but found [Your old password is required]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at RunTest.TestUpdateAccount.ChangePassword(TestUpdateAccount.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[, , HCMUT, , Your login is required]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Your login is required] but found [Passwords mismatch]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at RunTest.TestUpdateAccount.ChangePassword(TestUpdateAccount.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">RunTest.TestUpdateAccount#ResetPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, qui.dobk1002cla@hcmut.edu.vn, Login or password incorrect]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Login or password incorrect] but found [The alternative email address does not match the submitted user name]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at RunTest.TestUpdateAccount.ResetPassword(TestUpdateAccount.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[, 123456, 2014289, 2014289, Your login is required]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, 123456, , 2014289, Passwords mismatch]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, 123456, , , Your new password is required]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, 123456, 2014289, 2014289, Login or password incorrect]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, 123456, 2014289, , Passwords mismatch]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[, 123456789, , , Your login is required]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, 123456, 2014289, , Passwords mismatch]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[, 123456789, , , Your login is required]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[, 123456, 2014289, 2014289, Your login is required]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, 123456, , 2014289, Passwords mismatch]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, 123456, 2014289, 2014289, Login or password incorrect]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, 123456, , , Your new password is required]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m9">RunTest.TestUpdateAccount#ChangePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, , 2014289, 2014289, Your old password is required]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">RunTest.TestUpdateAccount#ResetPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, , Your alternative email address is required]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">RunTest.TestUpdateAccount#ResetPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[, , Your login is required]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">RunTest.TestUpdateAccount#ResetPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[, qui.dobk1002cla@hcmut.edu.vn, Your login is required]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">RunTest.TestUpdateAccount#ResetPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, qui.docla@hcmut.edu.vn, The alternative email address does not match the submitted user name]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Update image</h2><h3 id="m14">RunTest.TestUpdateImage#UpdateImage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[flag.pcapng, Cancel, Lỗi]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[8]/div[3]/div/div[2]/div/div/div[2]/div/div[2]/div/div/form/div/div[1]/div/input&quot;}
-  (Session info: chrome=108.0.5359.99)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d561e3bafbd845c9fce3b9bfd64e0b16, findElement {using=xpath, value=/html/body/div[8]/div[3]/div/div[2]/div/div/div[2]/div/div[2]/div/div/form/div/div[1]/div/input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55328/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d561e3bafbd845c9fce3b9bfd64e0b16
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at RunTest.TestUpdateImage.UpdateImage(TestUpdateImage.java:50)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">RunTest.TestUpdateImage#UpdateImage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[6.jpg, Cancel, Sửa hồ sơ cá nhân]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[3]/div[4]/div/div[2]/div/section/div/form/fieldset[2]/div/div[3]/div[2]/fieldset/div[1]/div[2]/div[1]/div[1]/div[1]/a&quot;}
-  (Session info: chrome=108.0.5359.99)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d561e3bafbd845c9fce3b9bfd64e0b16, findElement {using=xpath, value=/html/body/div[3]/div[4]/div/div[2]/div/section/div/form/fieldset[2]/div/div[3]/div[2]/fieldset/div[1]/div[2]/div[1]/div[1]/div[1]/a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\WINDOW~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55328/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d561e3bafbd845c9fce3b9bfd64e0b16
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at RunTest.TestUpdateImage.UpdateImage(TestUpdateImage.java:49)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m16">RunTest.TestUpdateImage#UpdateImage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[document.docx, Cancel, Lỗi]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m17">RunTest.TestUpdateImage#UpdateImage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[logoBK.png, Cancel, Sửa hồ sơ cá nhân]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m18">RunTest.TestUpdateImage#UpdateImage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[image.png, Cancel, Lỗi]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m19">RunTest.TestUpdateImage#UpdateImage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[test.txt, Cancel, Lỗi]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m20">RunTest.TestUpdateImage#UpdateImage</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[meowmeow.gif, Cancel, Sửa hồ sơ cá nhân]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">RunTest.TestUpdateAccount#ResetPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[, qui.dobk1002cla@hcmut.edu.vn, Your login is required]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">RunTest.TestUpdateAccount#ResetPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, , Your alternative email address is required]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">RunTest.TestUpdateAccount#ResetPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[qui.dobk1002cla, qui.docla@hcmut.edu.vn, The alternative email address does not match the submitted user name]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">RunTest.TestUpdateAccount#ResetPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[, , Your login is required]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

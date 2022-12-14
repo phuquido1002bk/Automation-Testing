@@ -19,7 +19,7 @@ public class InitAccount {
 	public WebDriver driver = null;
 	private String baseUrl = "https://e-learning.hcmut.edu.vn/";
 	private String pathDriver = "E:\\Program File\\ChromeDriver\\chromedriver.exe";
-	protected int count = 0;
+	
 	@BeforeTest
 	public void SetUp() {
 		System.setProperty("webdriver.chrome.driver", pathDriver);
@@ -30,20 +30,18 @@ public class InitAccount {
 		this.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		this.driver.manage().window().maximize();
 		
+		assertEquals(this.driver.getTitle(), "BKEL - HỆ THỐNG HỖ TRỢ GIẢNG DẠY VÀ HỌC TẬP");
 		this.driver.findElement(By.linkText("Log in")).click();
 		
-		assertEquals(this.driver
-				.findElement(By
-						.xpath("/html/body/div[2]/div[2]/div/div/section/div/div/div/div/div[3]/h2")
-						).getText(), "Log in using your account on:");
+		assertEquals(this.driver.getTitle(), "BKEL - HỆ THỐNG HỖ TRỢ GIẢNG DẠY VÀ HỌC TẬP: Log in to the site");
 		this.driver.findElement(By.linkText("Teachers and Students of HCMUT")).click();
 		
-		assertEquals(this.driver
-				.findElement(By
-						.xpath("/html/body/div/div/div[1]/div/h1")
-						).getText(), "Central Authentication Service");
+		assertEquals(this.driver.getTitle(), "HCMUT – Central Authentication Service");
+
 		this.driver.findElement(By.linkText("Change password?")).click();
+		assertEquals(this.driver.getTitle(), "Change password");
 	}
+	
 	@AfterTest
 	public void Quit() {
 		this.driver.quit();

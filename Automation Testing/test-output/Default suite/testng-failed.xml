@@ -6,8 +6,8 @@
       <class name="RunTest.TestUpdateAccount">
         <methods>
           <include name="ClearUsername"/>
-          <include name="ResetPassword"/>
-          <include name="ChangePassword"/>
+          <include name="ResetPassword" invocation-numbers="2"/>
+          <include name="ChangePassword" invocation-numbers="0 2"/>
           <include name="Quit"/>
           <include name="SetUp"/>
         </methods>

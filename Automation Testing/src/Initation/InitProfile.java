@@ -20,17 +20,15 @@ public class InitProfile {
 	private String baseUrl = "https://e-learning.hcmut.edu.vn/";
 	private String pathDriver = "E:\\Program File\\ChromeDriver\\chromedriver.exe";
 
-	public void Login() {
-		assertEquals(this.driver
-				.findElement(By
-						.xpath("/html/body/div/div/div[1]/div/h1")
-						).getText(), "Central Authentication Service");
+	private void Login() {
+		assertEquals(this.driver.getTitle(), "HCMUT – Central Authentication Service");
 		this.driver.findElement(By.xpath("//input[@id=\"username\"]")).sendKeys("qui.dobk1002cla");
 		this.driver.findElement(By.xpath("//input[@id=\"password\"]")).sendKeys("2014289ddpq");
 		this.driver.findElement(By.xpath("//*[@id=\"fm1\"]/div[4]/input[4]")).click();
 	}
 
-	public void goToProfile() {
+	private void goToProfile() {
+		assertEquals(this.driver.getTitle(), "BKEL - HỆ THỐNG HỖ TRỢ GIẢNG DẠY VÀ HỌC TẬP");
 		this.driver.findElement(By.xpath("//*[@id=\"user-menu-toggle\"]")).click();
 		this.driver.findElement(By.xpath("//*[@id=\"carousel-item-main\"]/a[1]")).click();
 	}
@@ -44,11 +42,22 @@ public class InitProfile {
 		this.driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		this.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		this.driver.manage().window().maximize();
-
+		
+		assertEquals(this.driver.getTitle(), "BKEL - HỆ THỐNG HỖ TRỢ GIẢNG DẠY VÀ HỌC TẬP");
 		this.driver.findElement(By.linkText("Log in")).click();
+		
+		assertEquals(this.driver.getTitle(), "BKEL - HỆ THỐNG HỖ TRỢ GIẢNG DẠY VÀ HỌC TẬP: Log in to the site");
 		this.driver.findElement(By.linkText("Teachers and Students of HCMUT")).click();
+		
 		this.Login();
 		this.goToProfile();
+		
 		this.driver.findElement(By.linkText("Sửa hồ sơ cá nhân")).click();
+		assertEquals(this.driver.getTitle(), "BKEL: Sửa hồ sơ cá nhân");
+	}
+
+	@AfterTest
+	public void Quit() {
+		this.driver.quit();
 	}
 }
