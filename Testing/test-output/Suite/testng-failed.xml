@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Change Password(failed)">
+    <classes>
+      <class name="RunTest.TestUpdateAccount">
+        <methods>
+          <include name="ClearUsername"/>
+          <include name="ResetPassword" invocation-numbers="2"/>
+          <include name="ChangePassword" invocation-numbers="0 2"/>
+          <include name="Quit"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- RunTest.TestUpdateAccount -->
+    </classes>
+  </test> <!-- Change Password(failed) -->
+  <test thread-count="5" name="Update image(failed)">
+    <classes>
+      <class name="RunTest.TestUpdateImage">
+        <methods>
+          <include name="UpdateImage"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- RunTest.TestUpdateImage -->
+    </classes>
+  </test> <!-- Update image(failed) -->
+</suite> <!-- Failed suite [Suite] -->
